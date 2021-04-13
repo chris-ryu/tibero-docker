@@ -1,7 +1,7 @@
 version: '3.9'
 services:
     tibero6:
-       hostname: 'tibero5'
+       hostname: 'tibero5sp1'
        build:
          context: .
        image: chrisryu/tibero5sp1 
