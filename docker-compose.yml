@@ -1,6 +1,6 @@
 version: '3.9'
 services:
-    tibero6:
+    tibero5:
        hostname: 'tibero5sp1'
        build:
          context: .
