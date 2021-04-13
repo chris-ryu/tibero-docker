@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -f /home/tibero/tibero6/config/tibero.tip ]; then
+if [ -f /home/tibero/tibero5sp1/config/tibero.tip ]; then
 
 	exit 0
 	
@@ -8,7 +8,7 @@ else
 
 # Tibero .bash_profile
 export TB_SID=tibero
-export TB_HOME=/home/tibero/tibero6
+export TB_HOME=/home/tibero/tibero5sp1
 export TB_CONFIG=$TB_HOME/config
 export PATH=$PATH:$TB_HOME/bin:$TB_HOME/client/bin
 export LD_LIBRARY_PATH=$TB_HOME/lib:$TB_HOME/client/lib
