@@ -38,7 +38,7 @@ wget --load-cookies /tmp/cookies.txt \
 chown tibero:dba /home/tibero/tibero5sp1/license/license.xml 
 
 output "--- ENTRYPOINT start.bash to tibero HOME  ---"
-su - tibero -c "wget -q https://raw.githubusercontent.com/dimensigon/tibero-docker/master/start.bash \
+su - tibero -c "wget -q https://raw.githubusercontent.com/chris-ryu/tibero-docker/master/start.bash \
 -O /home/tibero/start.bash && chmod +x /home/tibero/start.bash"
 
 output "--- Finished!  ---"
