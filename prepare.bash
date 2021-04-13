@@ -16,19 +16,19 @@ output "--- Creating Users and Groups ---"
 groupadd -g 500 dba
 useradd -g dba tibero
 
-output "--- Downloading Tibero Database Software via WGET ---"
-wget -q --load-cookies /tmp/cookies.txt \
-"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1PdRlSnuH2-e3THVQ2G7_NtiWHrN3B46w' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1PdRlSnuH2-e3THVQ2G7_NtiWHrN3B46w" \
--O /tmp/tibero6-bin-FS07_CS_1912-linux64-174424-opt.tar.gz && rm -rf /tmp/cookies.txt
+#output "--- Downloading Tibero Database Software via WGET ---"
+#wget -q --load-cookies /tmp/cookies.txt \
+#"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1PdRlSnuH2-e3THVQ2G7_NtiWHrN3B46w' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1PdRlSnuH2-e3THVQ2G7_NtiWHrN3B46w" \
+#-O /tmp/tibero6-bin-FS07_CS_1912-linux64-174424-opt.tar.gz && rm -rf /tmp/cookies.txt
 
 output "--- Untar Tibero Software ---"
-su - tibero -c "tar -xf /tmp/tibero6-bin-FS07_CS_1912-linux64-174424-opt.tar.gz"
+su - tibero -c "tar -xf /tmp/tibero5-bin-FS05_CS_1902-linux64-166170-opt.tar.gz"
 
 output "--- Creating Users and Groups ---"
 su - tibero -c "wget -q https://raw.githubusercontent.com/dimensigon/tibero-docker/master/bash_profile_tibero -O /home/tibero/.bash_profile"
 
 output "--- Cleanup files: Tibero Software ---"
-rm /tmp/tibero6-bin-FS07_CS_1912-linux64-174424-opt.tar.gz
+rm /tmp/tibero5-bin-FS05_CS_1902-linux64-166170-opt.tar.gz
 
 output "--- Downloading necessary files to run ---"
 #Until End of April 2021
