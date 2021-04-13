@@ -10,4 +10,5 @@ services:
        volumes:
         - ./data:/tibero
         - ./license:/home/tibero/tibero5sp1/license
+        - ./dist:/home/tibero/dist
 
