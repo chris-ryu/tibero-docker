@@ -1,13 +1,15 @@
 version: '3.9'
 services:
     tibero6:
-       hostname: 'tibero5sp1'
+       hostname: 'tibero5'
        build:
          context: .
-       image: chrisryu/tibero5sp1 
+       image: chrisryu/tibero5 
        ports:
         - "8629-8649:8629-8649"
        volumes:
         - ./data:/tibero
-        - ./license:/home/tibero/tibero5sp1/license
+        - ./license:/home/tibero/tibero5/license
+        - ./dist:/home/tibero/dist
+
 
