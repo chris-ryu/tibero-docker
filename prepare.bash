@@ -22,13 +22,13 @@ useradd -g dba tibero
 #-O /tmp/tibero5sp1-bin-FS07_CS_1912-linux64-174424-opt.tar.gz && rm -rf /tmp/cookies.txt
 
 output "--- Untar Tibero Software ---"
-su - tibero -c "tar -xf /tmp/tibero5-bin-FS05_CS_1902-linux64-166170-opt.tar.gz"
+su - tibero -c "tar -xf /home/tibero/dist/tibero5-bin-FS05_CS_1902-linux64-166170-opt.tar.gz"
 
 output "--- Creating Users and Groups ---"
 su - tibero -c "wget -q https://raw.githubusercontent.com/dimensigon/tibero-docker/master/bash_profile_tibero -O /home/tibero/.bash_profile"
 
 output "--- Cleanup files: Tibero Software ---"
-rm /tmp/tibero5-bin-FS05_CS_1902-linux64-166170-opt.tar.gz
+rm /home/tibero/dist/tibero5-bin-FS05_CS_1902-linux64-166170-opt.tar.gz
 
 output "--- Downloading necessary files to run ---"
 #Until End of April 2021
