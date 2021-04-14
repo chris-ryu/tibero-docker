@@ -10,6 +10,7 @@ FROM centos:7
 LABEL maintainer="contact@dimensigon.com"
 
 COPY prepare.bash /root/prepare.bash
+COPY dist/tibero5-bin-FS05_CS_1902-linux64-166170-opt.tar.gz /tmp/
 
 RUN bash /root/prepare.bash
 
