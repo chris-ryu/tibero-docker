@@ -2,13 +2,13 @@
 <tmax_license>
 	<license version="1.0">
 		<product version="5SP1">Tibero</product>
-		<serial_ID>1618272558</serial_ID>
+		<serial_ID>1618301139</serial_ID>
 		<issue_date>2021/04/13</issue_date>
-		<licensee>tibero5sp1</licensee>
+		<licensee>tibero5</licensee>
 		<edition>standard</edition>
 		<type>demo</type>
 		<demo_duration>183</demo_duration>
-		<identified_by_host>tibero5sp1</identified_by_host>
-		<signature>FbHbrpY1eUEr4RE2fKh5FL0+UEHbQ6WxuVHzJwQetUI=</signature>
+		<identified_by_host>tibero5</identified_by_host>
+		<signature>qNf595Y1eUEr4RE2fKh5FJO35kvbQ6WxuVHzJwQetUI=</signature>
 	</license>
 </tmax_license>
